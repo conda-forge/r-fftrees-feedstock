@@ -1,4 +1,4 @@
-{% set version = '1.4.0' %}
+{% set version = "1.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: FFTrees_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/FFTrees_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FFTrees/FFTrees_{{ version }}.tar.gz
@@ -15,9 +14,8 @@ source:
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 1002
-  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,20 +54,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=FFTrees
-  license: CC0
-  summary: Create, visualize, and test fast-and-frugal decision trees (FFTs). FFTs are very simple
-    decision trees for binary classification problems. FFTs can be preferable to more
-    complex algorithms because they are easy to communicate, require very little information,
-    and are robust against overfitting.
+  license: CC0-1.0
+  summary: Create, visualize, and test fast-and-frugal decision trees (FFTs). FFTs are very simple decision trees for binary classification problems. FFTs can be preferable to more complex algorithms because they are easy to communicate, require very little information, and are robust against overfitting.
   license_family: CC
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - apcamargo

@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: FFTrees_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/FFTrees_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FFTrees/FFTrees_{{ version }}.tar.gz
@@ -62,10 +61,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - apcamargo

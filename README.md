@@ -3,13 +3,11 @@ About r-fftrees
 
 Home: https://CRAN.R-project.org/package=FFTrees
 
-Package license: CC0
+Package license: CC0-1.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fftrees-feedstock/blob/master/LICENSE.txt)
 
 Summary: Create, visualize, and test fast-and-frugal decision trees (FFTs). FFTs are very simple decision trees for binary classification problems. FFTs can be preferable to more complex algorithms because they are easy to communicate, require very little information, and are robust against overfitting.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-fftrees` from the `conda-forge` channel can be achieved by adding 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-fftrees` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers

@@ -34,6 +34,7 @@ requirements:
     - r-rpart
     - r-stringr
     - r-yarrr
+    - r-knitr
   run:
     - r-base
     - r-caret
@@ -46,6 +47,7 @@ requirements:
     - r-rpart
     - r-stringr
     - r-yarrr
+    - r-knitr
 
 test:
   commands:

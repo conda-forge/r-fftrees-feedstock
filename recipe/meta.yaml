@@ -1,4 +1,4 @@
-{% set version = "1.7.5" %}
+{% set version = "1.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,43 +10,51 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FFTrees_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FFTrees/FFTrees_{{ version }}.tar.gz
-  sha256: 8390c5edd9ffe138d410f014c9c6b3b64090d1c415479538fd74eb6c4b46112b
+  sha256: 4a581c248dc39dace488c20506efc42c240ae9db041aa1ab7223b1ef80c4d26a
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
-
+    
 requirements:
   build:
   host:
     - r-base
     - r-caret
-    - r-circlize
+    - r-cli
+    - r-dplyr
     - r-e1071
-    - r-igraph
-    - r-proc
+    - r-knitr
+    - r-magrittr
     - r-progress
     - r-randomforest
     - r-rpart
+    - r-scales
     - r-stringr
-    - r-yarrr
+    - r-testthat
+    - r-tibble
+    - r-tidyselect
     - r-knitr
   run:
     - r-base
     - r-caret
-    - r-circlize
+    - r-cli
+    - r-dplyr
     - r-e1071
-    - r-igraph
-    - r-proc
+    - r-knitr
+    - r-magrittr
     - r-progress
     - r-randomforest
     - r-rpart
+    - r-scales
     - r-stringr
-    - r-yarrr
+    - r-testthat
+    - r-tibble
+    - r-tidyselect
     - r-knitr
 
 test:

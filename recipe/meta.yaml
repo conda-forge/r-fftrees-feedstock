@@ -19,34 +19,42 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
-
+    
 requirements:
   build:
   host:
     - r-base
     - r-caret
-    - r-circlize
+    - r-cli
+    - r-dplyr
     - r-e1071
-    - r-igraph
-    - r-proc
+    - r-knitr
+    - r-magrittr
     - r-progress
     - r-randomforest
     - r-rpart
+    - r-scales
     - r-stringr
-    - r-yarrr
+    - r-testthat
+    - r-tibble
+    - r-tidyselect
     - r-knitr
   run:
     - r-base
     - r-caret
-    - r-circlize
+    - r-cli
+    - r-dplyr
     - r-e1071
-    - r-igraph
-    - r-proc
+    - r-knitr
+    - r-magrittr
     - r-progress
     - r-randomforest
     - r-rpart
+    - r-scales
     - r-stringr
-    - r-yarrr
+    - r-testthat
+    - r-tibble
+    - r-tidyselect
     - r-knitr
 
 test:

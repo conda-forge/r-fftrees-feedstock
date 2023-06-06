@@ -1,11 +1,11 @@
-About r-fftrees
-===============
+About r-fftrees-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fftrees-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=FFTrees
 
 Package license: CC0-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fftrees-feedstock/blob/main/LICENSE.txt)
 
 Summary: Create, visualize, and test fast-and-frugal decision trees (FFTs). FFTs are very simple decision trees for binary classification problems. FFTs can be preferable to more complex algorithms because they are easy to communicate, require very little information, and are robust against overfitting.
 

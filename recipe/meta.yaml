@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FFTrees_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FFTrees/FFTrees_{{ version }}.tar.gz
-  sha256: 2cb57909667dbe007e8f001249c23a5e4a0f5f9450b40f0affe31cec230360b8
+  sha256: b4c8588696518bc3533a22a39ee47c88f56af6f7a636572b4b5bff2de02acd92
 
 build:
   noarch: generic

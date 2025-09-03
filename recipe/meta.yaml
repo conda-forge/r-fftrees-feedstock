@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FFTrees_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FFTrees/FFTrees_{{ version }}.tar.gz
-  sha256: b4c8588696518bc3533a22a39ee47c88f56af6f7a636572b4b5bff2de02acd92
+  sha256: d48d7f0c7c7a6ea0c89eca1ba785bbb2be2ab12337d5cc798d67f34f16db4f17
 
 build:
   noarch: generic
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
